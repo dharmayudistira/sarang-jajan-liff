@@ -65,6 +65,8 @@ function initializeLiff(myLiffId) {
             document.getElementById('liffAppContent').style.display = 'none';
             document.getElementById('liffIdErrorMessage').style.display = 'block';
             document.getElementById('liffInitErrorMessage').style.display = 'none';
+
+            console.log('error initializeLiff: ', err);
         });
 }
 
@@ -85,7 +87,7 @@ function initializeApp() {
                 document.getElementById('card_nama_user').innerHTML = name;
             })
             .catch((err) => {
-                console.log('error', err);
+                console.log('error getprofile: ', err);
             })
 
         // Show liffAppContent

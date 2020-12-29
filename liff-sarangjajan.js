@@ -61,9 +61,9 @@ function initializeLiff(myLiffId) {
             // document.getElementById("liffAppContent").classList.add('hidden');
             // document.getElementById("liffInitErrorMessage").classList.remove('hidden');
 
-            document.getElementById('liffLogin').style.display = 'none';
+            document.getElementById('liffLogin').style.display = 'block';
             document.getElementById('liffAppContent').style.display = 'none';
-            document.getElementById('liffIdErrorMessage').style.display = 'block';
+            document.getElementById('liffIdErrorMessage').style.display = 'none';
             document.getElementById('liffInitErrorMessage').style.display = 'none';
         });
 }

@@ -128,9 +128,9 @@ function displayIsInClientInfo() {
 function registerButtonHandlers() {
 
     // Button Login
-    document.getElementById('').addEventListener('click', function () {
+    // document.getElementById('').addEventListener('click', function () {
 
-    });
+    // });
 
     // Button Jajan
     document.getElementById('button_jajan').addEventListener('click', function () {
@@ -147,9 +147,9 @@ function registerButtonHandlers() {
     });
 
     // Button Navigasi
-    document.getElementById('').addEventListener('click', function () {
+    // document.getElementById('').addEventListener('click', function () {
 
-    });
+    // });
 }
 
 function sendAlertIfNotInClient() {

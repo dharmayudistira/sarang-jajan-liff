@@ -128,9 +128,11 @@ function displayIsInClientInfo() {
 function registerButtonHandlers() {
 
     // Button Login
-    // document.getElementById('').addEventListener('click', function () {
-
-    // });
+    document.getElementById('button_login').addEventListener('click', function () {
+        if (!liff.isLoggedIn()) {
+            liff.login();
+        }
+    });
 
     // Button Jajan
     document.getElementById('button_jajan').addEventListener('click', function () {

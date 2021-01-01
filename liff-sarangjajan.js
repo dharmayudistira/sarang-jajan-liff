@@ -149,9 +149,21 @@ function registerButtonHandlers() {
     });
 
     // Button Navigasi
-    // document.getElementById('').addEventListener('click', function () {
+    document.getElementById('button_navigasi').addEventListener('click', function () {
+        var aksi = document.getElementById('button_navigasi').textContent;
 
-    // });
+        if(aksi == 'Logout') {
+            if (liff.isLoggedIn()) {
+                liff.logout();
+                window.location.reload();
+            }
+        }else {
+            liff.openWindow({
+                url: 'https://sarang-jajan-v1.herokuapp.com/', // Isi dengan Endpoint URL aplikasi web Anda
+                external: true
+            });
+        }
+    });
 }
 
 function sendAlertIfNotInClient() {
